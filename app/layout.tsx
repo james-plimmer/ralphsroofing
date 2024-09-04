@@ -21,16 +21,16 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className="min-h-screen bg-amber-50 font-serif flex flex-col">
-        <nav className="bg-amber-50 p-5 flex  sticky top-0  border-b-8 border-b-green-950">
-          <div className="content-center w-fit">
-              <Link href="/" className="font-light text-4xl md:text-6xl text-green-900">PLIMM's PROPERTIES</Link>
-          </div>
-          <div className=" md:justify-center content-center w-full">
+      <body className="min-h-screen bg-teal-900 font-serif flex flex-col">
+        <nav className="bg-amber-50 p-5 sticky top-0  border-b-8 border-b-green-950">
+          <div className="content-center justify-center w-full">
             <NavList />
           </div>
+          <div className="text-center">
+              <Link href="/" className=" text-center text-2xl sm:text-4xl md:text-6xl text-green-900">PLIMM's PROPERTIES</Link>
+          </div>
         </nav>
-        <main className="mt-2 mb-2 flex grow flex-col">
+        <main className="m-2 flex grow flex-col">
           {children}
         </main>
       </body>

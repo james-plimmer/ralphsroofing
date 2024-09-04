@@ -7,13 +7,13 @@ export default function NavList() {
     const pathname = usePathname();
 
     return (
-        <ul className="text-right inline-block lg:p-4 lg:justify-evenly text-white w-full text-lg sm:text-2xl md:text-3xl lg:text-4xl lg:flex">
+        <ul className="flex lg:pb-2 justify-between w-full sm:text-lg md:text-xl lg:text-2xl">
             <li>
-                <Link className={pathname.includes('/properties') ? "text-green-900 font-bold" : "text-green-900 hover:underline"} href="/properties">Properties</Link>
+                <Link className={pathname.includes('/properties') ? "text-green-900" : "text-gray-500 hover:text-green-900"} href="/properties">Properties</Link>
                 {/* TODO: add dropdown menu which maps properties */}
             </li>
-            <li><Link className={pathname == '/testimonials' ? "text-green-900 font-bold" : "text-green-900 hover:underline"} href="/testimonials">Testimonials</Link></li>
-            <li><Link className={pathname == '/apply' ? "text-green-900 font-bold" : "text-green-900 hover:underline"} href="/apply">Apply</Link></li>
+            <li><Link className={pathname == '/testimonials' ? "text-green-900" : "text-gray-500 hover:text-green-900"} href="/testimonials">Testimonials</Link></li>
+            <li><Link className={pathname == '/apply' ? "text-green-900" : "text-gray-500 hover:text-green-900"} href="/apply">Apply</Link></li>
           </ul>
     );
 }
