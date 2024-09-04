@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Link from "next/link";
 import NavList from "./components/NavList";
@@ -6,6 +6,11 @@ import NavList from "./components/NavList";
 export const metadata: Metadata = {
   title: "Plimm's Properties",
   description: "Find your next luxury getaway...",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1.0,
 };
 
 export default function RootLayout({
@@ -16,16 +21,16 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className="h-screen bg-stone-700">
-        <nav className="bg-stone-800 p-5 flex w-full sticky top-0 shadow-md font-serif text-stone-300">
-          <div className="text-7xl w-8/12">
-              <Link href="/" className="font-light hover:text-white">PLIMM's PROPERTIES</Link>
+      <body className="h-screen bg-green-950">
+        <nav className="bg-green-950 p-5 flex  sticky top-0 shadow-lg font-serif text-stone-300 border-b-4 border-b-orange-200">
+          <div className="content-center w-fit">
+              <Link href="/" className="font-light text-3xl sm:text-5xl text-orange-200">PLIMM's PROPERTIES</Link>
           </div>
-          <div className="justify-center w-7/12 flex">
+          <div className=" md:justify-center content-center w-full">
             <NavList />
           </div>
         </nav>
-        <main className="bg-slate-400 h-screen">
+        <main className="bg-teal-950 h-screen">
           {children}
         </main>
       </body>
