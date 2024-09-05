@@ -1,0 +1,27 @@
+[
+{
+    "ID": 1,
+    "Name": "Property 1",
+    "Address": "123 Main St",
+    "City": "Anytown",
+    "Price": "£1000 per night",
+    "Image": "/house.png"
+},
+{
+    "ID": 2,
+    "Name": "Property 2",
+    "Address": "456 Elm St",
+    "City": "Othertown",
+    "Price": "£2000 per night",
+    "Image": "/house.png"
+},
+{
+    "ID": 3,
+    "Name": "Property 3",
+    "Address": "789 Oak St",
+    "City": "Thistown",
+    "Price": "£3000 per night",
+    "Image": "/house.png"
+}
+
+]
